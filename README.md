@@ -1,2 +1,2 @@
-# Repository
-Project repository.
+# Algorithms
+Project's repository containing various algorithms.
