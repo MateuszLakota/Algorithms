@@ -1,2 +1,4 @@
-package ProjectEuler;public class ProjectEuler {
+package ProjectEuler;
+
+class ProjectEuler {
 }
