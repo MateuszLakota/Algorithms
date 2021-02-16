@@ -1,4 +1,4 @@
 package ProjectEuler;
 
-class ProjectEuler {
+class TestProjectEuler {
 }
