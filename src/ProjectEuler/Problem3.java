@@ -9,6 +9,14 @@ package ProjectEuler;
 
 public class Problem3 {
     static short solveProblem3() {
-        return 0;
+        long number = 600851475143L;
+        short largestPrimeFactor;
+        for (largestPrimeFactor = 2; largestPrimeFactor <= number; largestPrimeFactor++) {
+            if (number % largestPrimeFactor == 0) {
+                number /= largestPrimeFactor;
+                largestPrimeFactor--;
+            }
+        }
+        return largestPrimeFactor;
     }
 }

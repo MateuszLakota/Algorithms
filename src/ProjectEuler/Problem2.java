@@ -11,18 +11,18 @@ package ProjectEuler;
 
 public class Problem2 {
     static int solveProblem2() {
-        int previousTermsValue = 0;
-        int termsValue = 1;
-        int valueOfCurrentTerm;
+        int secondToPreviousTermsValue = 0;
+        int previousTermsValue = 1;
+        int currentTermsValue;
         int sumOfEvenValuedTerms = 0;
         do {
-            valueOfCurrentTerm = previousTermsValue + termsValue;
-            previousTermsValue = termsValue;
-            termsValue = valueOfCurrentTerm;
-            if (valueOfCurrentTerm % 2 == 0) {
-                sumOfEvenValuedTerms += valueOfCurrentTerm;
+            currentTermsValue = secondToPreviousTermsValue + previousTermsValue;
+            secondToPreviousTermsValue = previousTermsValue;
+            previousTermsValue = currentTermsValue;
+            if (currentTermsValue % 2 == 0) {
+                sumOfEvenValuedTerms += currentTermsValue;
             }
-        } while (valueOfCurrentTerm < 4000000);
+        } while (currentTermsValue < 4000000);
         return sumOfEvenValuedTerms;
     }
 }
