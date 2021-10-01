@@ -5,15 +5,15 @@ package ProjectEuler;
  * first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ... By considering the terms in the Fibonacci sequence
  * whose values do not exceed four million, find the sum of the even-valued terms.
  *
- * Source: https://projecteuler.net/problem=2
  * Copyright © 2021 ProjectEuler.net
+ * Source: https://projecteuler.net/problem=2
  */
 
-public class Problem2 {
+class Problem2 {
     static int solveProblem2() {
-        int secondToPreviousTermsValue = 0;
-        int previousTermsValue = 1;
         int currentTermsValue;
+        int previousTermsValue = 1;
+        int secondToPreviousTermsValue = 0;
         int sumOfEvenValuedTerms = 0;
         do {
             currentTermsValue = secondToPreviousTermsValue + previousTermsValue;
