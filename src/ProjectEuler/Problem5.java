@@ -24,6 +24,4 @@ class Problem5 {
             return getGreatestCommonDivisor(number2, number1 % number2);
         }
     }
-
-
 }

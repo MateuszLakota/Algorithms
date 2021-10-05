@@ -28,4 +28,9 @@ class TestProjectEuler {
     void testSolveProblem5() {
         Assertions.assertEquals(232792560, Problem5.solveProblem5());
     }
+
+    @Test
+    void testSolveProblem6() {
+        Assertions.assertEquals(25164150, Problem6.solveProblem6());
+    }
 }

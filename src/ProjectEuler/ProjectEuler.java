@@ -12,5 +12,6 @@ public class ProjectEuler {
         Problem3.solveProblem3();
         Problem4.solveProblem4();
         Problem5.solveProblem5();
+        Problem6.solveProblem6();
     }
 }
