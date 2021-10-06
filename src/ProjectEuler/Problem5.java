@@ -9,7 +9,7 @@ package ProjectEuler;
  */
 
 class Problem5 {
-    static int solveProblem5() {
+    static int solveProblem() {
         int leastCommonMultiple = 1;
         for (byte i = 2; i < 20; i++) {
             leastCommonMultiple = leastCommonMultiple * i / getGreatestCommonDivisor(leastCommonMultiple, i);

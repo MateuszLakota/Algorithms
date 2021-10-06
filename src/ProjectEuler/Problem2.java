@@ -10,7 +10,7 @@ package ProjectEuler;
  */
 
 class Problem2 {
-    static int solveProblem2() {
+    static int solveProblem() {
         int currentTermsValue;
         int previousTermsValue = 1;
         int secondToPreviousTermsValue = 0;

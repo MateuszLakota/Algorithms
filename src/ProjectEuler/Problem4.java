@@ -9,7 +9,7 @@ package ProjectEuler;
  */
 
 class Problem4 {
-    static int solveProblem4() {
+    static int solveProblem() {
         int largestPalindrome = 0;
         int product;
         for (short i = 100; i < 1000; i++) {
