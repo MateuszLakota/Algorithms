@@ -13,6 +13,6 @@ public class ProjectEuler {
         Problem4.solveProblem();
         Problem5.solveProblem();
         Problem6.solveProblem();
-        System.out.println(Problem7.solveProblem());
+        Problem7.solveProblem();
     }
 }
