@@ -11,7 +11,7 @@ package ProjectEuler;
 class Problem1 {
     static int solveProblem() {
         int sumOf3And5ArithmeticProgressionsTerms = getSumOf3ArithmeticProgressionTerms();
-        for (short i = 5; i < 1000; i = (short) (i + 5)) {
+        for (short i = 5; i < 1000; i += 5) {
             if (i % 3 != 0) {
                 sumOf3And5ArithmeticProgressionsTerms += i;
             }

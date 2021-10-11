@@ -5,14 +5,15 @@ package ProjectEuler;
  * 10001st prime number?
  *
  * Copyright © 2021 ProjectEuler.net
- * Source: https://projecteuler.net/problem=6
+ * Source: https://projecteuler.net/problem=7
  */
 
 class Problem7 {
     static int solveProblem() {
         short numberOfPrimeNumbers = 6;
         int soughtPrimeNumber = 0;
-        outerLoop: for (int i = 15; numberOfPrimeNumbers < 10001; i += 2) {
+        outerLoop:
+        for (int i = 15; numberOfPrimeNumbers < 10001; i += 2) {
             for (int j = 3; j < i; j += 2) {
                 if (i % j == 0) {
                     continue outerLoop;

@@ -1,10 +1,5 @@
 package ProjectEuler;
 
-/*
- * Copyright © 2021 ProjectEuler.net
- * Source: https://projecteuler.net/
- */
-
 public class ProjectEuler {
     public static void main(String[] args) {
         Problem1.solveProblem();
@@ -14,5 +9,6 @@ public class ProjectEuler {
         Problem5.solveProblem();
         Problem6.solveProblem();
         Problem7.solveProblem();
+        Problem8.solveProblem();
     }
 }
