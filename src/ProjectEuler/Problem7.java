@@ -13,14 +13,16 @@ class Problem7 {
         short numberOfPrimeNumbers = 6;
         int soughtPrimeNumber = 0;
         outerLoop:
-        for (int i = 15; numberOfPrimeNumbers < 10001; i += 2) {
-            for (int j = 3; j < i; j += 2) {
-                if (i % j == 0) {
-                    continue outerLoop;
+        for (int i = 17; numberOfPrimeNumbers < 10001; i += 2) {
+            if (!(i % 3 == 0 || i % 5 == 0 || i % 7 == 0 || i % 11 == 0 || i % 13 == 0)) {
+                for (int j = 3; j < i; j += 2) {
+                    if (i % j == 0) {
+                        continue outerLoop;
+                    }
                 }
+                numberOfPrimeNumbers++;
+                soughtPrimeNumber = i;
             }
-            numberOfPrimeNumbers++;
-            soughtPrimeNumber = i;
         }
         return soughtPrimeNumber;
     }
