@@ -10,18 +10,15 @@ package ProjectEuler;
 
 class Problem1 {
     static int solveProblem() {
-        int sumOf3And5ArithmeticProgressionsTerms = getSumOf3ArithmeticProgressionTerms();
+        short lastTermOf3ArithmeticProgression = 1000 / 3;
+        short valueOfTheLastTermOf3ArithmeticProgression = (short) (3 + (lastTermOf3ArithmeticProgression - 1) * 3);
+        int sumOf3And5ArithmeticProgressionsTerms = ((3 + valueOfTheLastTermOf3ArithmeticProgression) / 2)
+                * lastTermOf3ArithmeticProgression;
         for (short i = 5; i < 1000; i += 5) {
             if (i % 3 != 0) {
                 sumOf3And5ArithmeticProgressionsTerms += i;
             }
         }
         return sumOf3And5ArithmeticProgressionsTerms;
-    }
-
-    private static int getSumOf3ArithmeticProgressionTerms() {
-        short lastTermOf3ArithmeticProgression = 1000 / 3;
-        short valueOfTheLastTermOf3ArithmeticProgression = (short) (3 + (lastTermOf3ArithmeticProgression - 1) * 3);
-        return ((3 + valueOfTheLastTermOf3ArithmeticProgression) / 2) * lastTermOf3ArithmeticProgression;
     }
 }

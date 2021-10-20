@@ -12,8 +12,8 @@ class Problem4 {
     static int solveProblem() {
         int largestPalindrome = 0;
         int product;
-        for (short i = 100; i < 1000; i++) {
-            for (short j = 100; j < 1000; j++) {
+        for (short i = 999; i >= 100; i--) {
+            for (short j = 999; j >= 100; j--) {
                 product = i * j;
                 String possiblePalindrome = String.valueOf(product);
                 if (product > largestPalindrome && possiblePalindrome.equals(new StringBuilder(possiblePalindrome)

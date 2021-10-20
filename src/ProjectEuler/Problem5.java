@@ -18,10 +18,12 @@ class Problem5 {
     }
 
     private static int getGreatestCommonDivisor(int number1, int number2) {
-        if (number2 == 0) {
-            return number1;
-        } else {
-            return getGreatestCommonDivisor(number2, number1 % number2);
+        int remainder;
+        while (number2 > 0) {
+            remainder = number1 % number2;
+            number1 = number2;
+            number2 = remainder;
         }
+        return number1;
     }
 }
