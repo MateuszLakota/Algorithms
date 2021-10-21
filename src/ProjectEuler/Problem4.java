@@ -15,13 +15,20 @@ class Problem4 {
         for (short i = 999; i >= 100; i--) {
             for (short j = 999; j >= 100; j--) {
                 product = i * j;
-                String possiblePalindrome = String.valueOf(product);
-                if (product > largestPalindrome && possiblePalindrome.equals(new StringBuilder(possiblePalindrome)
-                        .reverse().toString())) {
+                if (product > largestPalindrome && i * j == getInvertedNumber(i * j)) {
                     largestPalindrome = product;
                 }
             }
         }
         return largestPalindrome;
+    }
+
+    private static int getInvertedNumber(int number) {
+        int invertedNumber = 0;
+        while (number > 0) {
+            invertedNumber = invertedNumber * 10 + number % 10;
+            number /= 10;
+        }
+        return invertedNumber;
     }
 }
