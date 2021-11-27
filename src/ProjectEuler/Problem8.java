@@ -34,19 +34,23 @@ class Problem8 {
                 "6368991256071760605886116467109405077541002256983155200055935729725716362695618826704282524836008232" +
                 "57530420752963450";
         short numberAsAStringLength = (short) numberAsAString.length();
+        short numberOfAdjacentNot0Digits = 0;
         String[] digitsAsStrings = numberAsAString.split("");
         byte[] digits = new byte[numberAsAStringLength];
         for (short i = 0; i < numberAsAStringLength; i++) {
-            if (!digitsAsStrings[i].equals(digit0)) {
+            if (digitsAsStrings[i].equals(digit0)) {
+                numberOfAdjacentNot0Digits = 0;
+            } else {
                 digits[i] = Byte.parseByte(digitsAsStrings[i]);
-            }
-            if (i > 12) {
-                long productOf13AdjacentDigits = 1L;
-                for (short j = (short) (i - 13); j < i; j++) {
-                    productOf13AdjacentDigits *= digits[j];
-                }
-                if (productOf13AdjacentDigits > greatestProductOf13AdjacentDigits) {
-                    greatestProductOf13AdjacentDigits = productOf13AdjacentDigits;
+                numberOfAdjacentNot0Digits++;
+                if (numberOfAdjacentNot0Digits >= 13 && i >= 12) {
+                    long productOf13AdjacentDigits = 1L;
+                    for (short j = (short) (i - 12); j <= i; j++) {
+                        productOf13AdjacentDigits *= digits[j];
+                    }
+                    if (productOf13AdjacentDigits > greatestProductOf13AdjacentDigits) {
+                        greatestProductOf13AdjacentDigits = productOf13AdjacentDigits;
+                    }
                 }
             }
         }
