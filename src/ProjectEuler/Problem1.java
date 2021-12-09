@@ -9,7 +9,7 @@ package ProjectEuler;
  */
 
 class Problem1 {
-    static int solveProblem() {
+    static int solve() {
         short lastTermOf3ArithmeticProgression = 1000 / 3;
         short valueOfTheLastTermOf3ArithmeticProgression = (short) (3 + (lastTermOf3ArithmeticProgression - 1) * 3);
         int sumOf3And5ArithmeticProgressionsTerms = ((3 + valueOfTheLastTermOf3ArithmeticProgression) / 2)

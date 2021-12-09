@@ -5,42 +5,42 @@ import org.junit.jupiter.api.Test;
 
 class TestProjectEuler {
     @Test
-    void testSolveProblem1() {
-        Assertions.assertEquals(233168, Problem1.solveProblem());
+    void testProblem1Solve() {
+        Assertions.assertEquals(233168, Problem1.solve());
     }
 
     @Test
-    void testSolveProblem2() {
-        Assertions.assertEquals(4613732, Problem2.solveProblem());
+    void testProblem2Solve() {
+        Assertions.assertEquals(4613732, Problem2.solve());
     }
 
     @Test
-    void testSolveProblem3() {
-        Assertions.assertEquals(6857, Problem3.solveProblem());
+    void testProblem3Solve() {
+        Assertions.assertEquals(6857, Problem3.solve());
     }
 
     @Test
-    void testSolveProblem4() {
-        Assertions.assertEquals(906609, Problem4.solveProblem());
+    void testProblem4Solve() {
+        Assertions.assertEquals(906609, Problem4.solve());
     }
 
     @Test
-    void testSolveProblem5() {
-        Assertions.assertEquals(232792560, Problem5.solveProblem());
+    void testProblem5Solve() {
+        Assertions.assertEquals(232792560, Problem5.solve());
     }
 
     @Test
-    void testSolveProblem6() {
-        Assertions.assertEquals(25164150, Problem6.solveProblem());
+    void testProblem6Solve() {
+        Assertions.assertEquals(25164150, Problem6.solve());
     }
 
     @Test
-    void testSolveProblem7() {
-        Assertions.assertEquals(104743, Problem7.solveProblem());
+    void testProblem7Solve() {
+        Assertions.assertEquals(104743, Problem7.solve());
     }
 
     @Test
-    void testSolveProblem8() {
-        Assertions.assertEquals(23514624000L, Problem8.solveProblem());
+    void testProblem8Solve() {
+        Assertions.assertEquals(23514624000L, Problem8.solve());
     }
 }

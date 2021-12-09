@@ -2,13 +2,13 @@ package ProjectEuler;
 
 public class ProjectEuler {
     public static void main(String[] args) {
-        Problem1.solveProblem();
-        Problem2.solveProblem();
-        Problem3.solveProblem();
-        Problem4.solveProblem();
-        Problem5.solveProblem();
-        Problem6.solveProblem();
-        Problem7.solveProblem();
-        Problem8.solveProblem();
+        Problem1.solve();
+        Problem2.solve();
+        Problem3.solve();
+        Problem4.solve();
+        Problem5.solve();
+        Problem6.solve();
+        Problem7.solve();
+        Problem8.solve();
     }
 }

@@ -19,7 +19,7 @@ package ProjectEuler;
  */
 
 class Problem8 {
-    static long solveProblem() {
+    static long solve() {
         String digit0 = "0";
         long greatestProductOf13AdjacentDigits = 0L;
         String numberAsAString = "73167176531330624919225119674426574742355349194934969835203127745063262395783180169" +

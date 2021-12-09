@@ -8,7 +8,7 @@ package ProjectEuler;
  */
 
 class Problem3 {
-    static short solveProblem() {
+    static short solve() {
         short largestPrimeFactor;
         long number = 600851475143L;
         for (largestPrimeFactor = 2; largestPrimeFactor <= number; largestPrimeFactor++) {

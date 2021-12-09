@@ -10,19 +10,19 @@ package ProjectEuler;
  */
 
 class Problem2 {
-    static int solveProblem() {
-        int currentTermsValue;
-        int previousTermsValue = 1;
-        int secondToPreviousTermsValue = 0;
+    static int solve() {
+        int currentTermValue;
+        int previousTermValue = 1;
+        int secondToPreviousTermValue = 0;
         int sumOfEvenValuedTerms = 0;
         do {
-            currentTermsValue = secondToPreviousTermsValue + previousTermsValue;
-            secondToPreviousTermsValue = previousTermsValue;
-            previousTermsValue = currentTermsValue;
-            if (currentTermsValue % 2 == 0) {
-                sumOfEvenValuedTerms += currentTermsValue;
+            currentTermValue = secondToPreviousTermValue + previousTermValue;
+            secondToPreviousTermValue = previousTermValue;
+            previousTermValue = currentTermValue;
+            if (currentTermValue % 2 == 0) {
+                sumOfEvenValuedTerms += currentTermValue;
             }
-        } while (currentTermsValue < 4000000);
+        } while (currentTermValue < 4000000);
         return sumOfEvenValuedTerms;
     }
 }

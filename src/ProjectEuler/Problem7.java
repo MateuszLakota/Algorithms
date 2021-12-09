@@ -9,7 +9,7 @@ package ProjectEuler;
  */
 
 class Problem7 {
-    static int solveProblem() {
+    static int solve() {
         short numberOfPrimeNumbers = 6;
         int soughtPrimeNumber = 0;
         outerLoop:
