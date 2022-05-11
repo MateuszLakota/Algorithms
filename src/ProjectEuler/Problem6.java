@@ -14,6 +14,6 @@ class Problem6 {
     static int solve() {
         int sumOfFirst100NaturalNumbers = 100 * (100 + 1) / 2;
         int sumOfSquaresOfFirst100NaturalNumbers = 100 * (100 + 1) * (2 * 100 + 1) / 6;
-        return (int) (Math.pow(sumOfFirst100NaturalNumbers, 2.0) - sumOfSquaresOfFirst100NaturalNumbers);
+        return (int) Math.pow(sumOfFirst100NaturalNumbers, 2.0) - sumOfSquaresOfFirst100NaturalNumbers;
     }
 }
